@@ -1,2 +1,2 @@
 # Portfolio
-a showcase of my shills
+a showcase of my skills
