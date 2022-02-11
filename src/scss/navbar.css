@@ -1,0 +1,38 @@
+.nav {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 5%;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  height: 3.2vw;
+}
+
+.nav ul li {
+  list-style: none;
+  margin: 0 5% 0 0;
+  margin-top: auto;
+}
+
+.nav ul a {
+  color: black;
+}
+
+.nav ul a:hover {
+  -webkit-text-decoration: underline #734a44 !important;
+          text-decoration: underline #734a44 !important;
+}
+/*# sourceMappingURL=navbar.css.map */

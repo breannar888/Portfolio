@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
+
+.home {
+  display: flex;
+  font-family: "Lora", serif;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,0 +1,24 @@
+.nav {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 5%;
+  ul {
+    display: flex;
+    justify-content: right;
+    height: 3.2vw;
+
+    li {
+      list-style: none;
+      margin: 0 5% 0 0;
+      margin-top: auto;
+    }
+    a {
+      color: black;
+      &:hover {
+        text-decoration: underline #734a44 !important;
+      }
+    }
+  }
+}

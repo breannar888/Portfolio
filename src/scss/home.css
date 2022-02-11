@@ -1,0 +1,35 @@
+.about-wrapper {
+  padding: 5% 15% 5% 15%;
+}
+
+.about-me-title {
+  font-size: 70px;
+  white-space: pre-wrap;
+}
+
+.about-me-text {
+  font-size: 16px;
+  text-align: right;
+}
+
+.about-me-text span {
+  color: #f5b77a;
+}
+
+.about-title-container {
+  width: auto;
+}
+
+.about-underline {
+  width: 36em;
+}
+
+.about-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+/*# sourceMappingURL=home.css.map */
