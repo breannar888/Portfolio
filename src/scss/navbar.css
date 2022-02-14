@@ -1,12 +1,5 @@
 .nav {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 100%;
   min-height: 5%;
 }
@@ -27,12 +20,44 @@
   margin-top: auto;
 }
 
-.nav ul a {
+.nav .a-link {
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
   color: black;
 }
 
-.nav ul a:hover {
-  -webkit-text-decoration: underline #734a44 !important;
-          text-decoration: underline #734a44 !important;
+.nav .a-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #5a3d39;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.nav .a-link:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.nav .active::after {
+  content: "";
+  width: 100%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  height: 2px;
+  background-color: #5a3d39;
 }
 /*# sourceMappingURL=navbar.css.map */

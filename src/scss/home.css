@@ -21,7 +21,7 @@
 }
 
 .about-underline {
-  width: 36em;
+  max-width: 36em;
 }
 
 .about-btn {
@@ -31,5 +31,9 @@
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+}
+
+.about-btn a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=home.css.map */

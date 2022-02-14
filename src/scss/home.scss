@@ -16,9 +16,12 @@
   width: auto;
 }
 .about-underline {
-  width: 36em;
+  max-width: 36em;
 }
 .about-btn {
     display: flex;
     justify-content: right;
+    a {
+      text-decoration: none;
+    }
 }

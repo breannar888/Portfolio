@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
 
-.home {
+.app {
   display: flex;
-  font-family: "Lora", serif;
+  font-family: 'Salsa', cursive;
   min-height: 100vh;
+  max-width: 100vw;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
 }

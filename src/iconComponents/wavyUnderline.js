@@ -10,7 +10,7 @@ function WavyUnderline() {
       <path
         d="M1 13.2371C121.429 -24.4548 565.754 48.5039 555.837 4.19434"
         stroke="#5A3D39"
-        stroke-width="3"
+        strokeWidth="3"
       />
     </svg>
   );

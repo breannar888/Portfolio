@@ -1,4 +1,5 @@
 import "../scss/home.css";
+import { motion } from "framer-motion";
 import WavyUnderline from "../iconComponents/wavyUnderline";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
@@ -9,8 +10,9 @@ function HomePage() {
 
   const ProjectsBtn = styled(Button)({
     backgroundColor: "#C0D7B6",
-    fontFamily: ['"Lora", serif'],
+    fontFamily: ['"Salsa", cursive'],
     textTransform: "capitalize",
+    textDecoration: "none",
     color: "black",
     "&:hover": {
       backgroundColor: "#98ab90",
@@ -18,25 +20,58 @@ function HomePage() {
     },
   });
 
+  const container = {
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        duration: 0.6,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      transition: { duration: 0.6 },
+    },
+  };
+
+  const loadUp = {
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.6 },
+    },
+    hidden: {
+      y: 50,
+      opacity: 0,
+    },
+  };
+
   return (
-    <div className="about-wrapper">
-      <div className="about-title-container">
-        <div className="about-me-title">{title}</div>
-        <div className="about-underline">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={container}
+      className="about-wrapper"
+    >
+      <motion.div variants={loadUp} className="about-title-container">
+        <motion.div variants={loadUp} className="about-me-title">
+          {title}
+        </motion.div>
+        <motion.div variants={loadUp} className="about-underline">
           <WavyUnderline />
-        </div>
-      </div>
-      <p className="about-me-text">
-        I'm a <span>Frontend Web Developer</span> that develops websites and
-        web-based software. I specialize in React, CSS/SASS, and JavaScript, but
-        I am always looking for new technologies to help me and my skills grow!
-      </p>
-      <div className="about-btn">
+        </motion.div>
+      </motion.div>
+      <motion.p variants={loadUp} className="about-me-text">
+        I'm a <span>Frontend Web Developer</span> that designs and develops
+        websites and web-based software. I specialize in React, CSS/SASS, and
+        JavaScript.
+      </motion.p>
+      <motion.div variants={loadUp} className="about-btn">
         <NavLink to="/projects">
           <ProjectsBtn variant="contained">View Projects</ProjectsBtn>
         </NavLink>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 

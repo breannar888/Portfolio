@@ -9,7 +9,7 @@ import ContactPage from "./pages/Contact";
 
 function App() {
   return (
-    <div className="home">
+    <div className="app">
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>

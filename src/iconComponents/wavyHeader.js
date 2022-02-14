@@ -18,7 +18,7 @@ function WavyHeader() {
           d="M1511.77 71.2544C1529.55 110.957 531.341 35.4861 0 92V-50H1511.77V71.2544Z"
           fill="#D47B59"
           stroke="#D47B59"
-          stroke-width="3"
+          strokeWidth="3"
         />
       </svg>
     </div>

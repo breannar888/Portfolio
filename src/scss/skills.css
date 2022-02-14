@@ -1,0 +1,39 @@
+.skills-container {
+  width: 70%;
+  margin: 0% auto 0% auto;
+}
+
+.skills-container .skills-title {
+  margin: auto;
+  font-size: 40px;
+  text-align: center;
+}
+
+.skills-container .skills-underline {
+  max-width: 300px;
+  margin: auto;
+}
+
+.icon-wrapper {
+  margin-top: 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.icon-wrapper .icon-card {
+  text-align: center;
+}
+
+.icon-wrapper .icon-card svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 55px;
+  max-height: 70px;
+}
+/*# sourceMappingURL=skills.css.map */

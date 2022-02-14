@@ -1,24 +1,48 @@
 .nav {
   position: absolute;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   min-height: 5%;
   ul {
     display: flex;
     justify-content: right;
     height: 3.2vw;
-
     li {
       list-style: none;
       margin: 0 5% 0 0;
       margin-top: auto;
     }
-    a {
-      color: black;
-      &:hover {
-        text-decoration: underline #734a44 !important;
+  }
+  .a-link {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: black;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #5a3d39;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
       }
+    }
+  }
+  .active {
+    &::after {
+      content: "";
+      width: 100%;
+      transform: scaleX(1);
+      height: 2px;
+      background-color: #5a3d39;
     }
   }
 }

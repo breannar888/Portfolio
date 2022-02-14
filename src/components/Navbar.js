@@ -1,37 +1,37 @@
 import { NavLink } from "react-router-dom";
 import "../scss/navbar.css";
+import { motion } from "framer-motion";
+import classNames from "classnames";
+import { useState } from "react";
 
 function NavBar() {
   // variable to apply active styling for nav links
-  const navStyle = ({ isActive }) => ({
-    textDecoration: isActive ? "underline" : "none",
-    textDecorationColor: isActive ? "#734a44" : "none",
-  });
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <div className="nav">
-      <ul>
-        <li>
-          <NavLink to="/" style={navStyle}>
-            Home
+      <motion.ul>
+        <motion.li>
+          <NavLink to="/" className={`a-link ${isActive ? "active" : ""}`}>
+            About
           </NavLink>
-        </li>
-        <li>
-          <NavLink to="/skills" style={navStyle}>
+        </motion.li>
+        <motion.li>
+          <NavLink to="/skills" className="a-link">
             Skills
           </NavLink>
-        </li>
-        <li>
-          <NavLink to="/projects" style={navStyle}>
+        </motion.li>
+        <motion.li>
+          <NavLink to="/projects" className="a-link">
             Projects
           </NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" style={navStyle}>
+        </motion.li>
+        <motion.li>
+          <NavLink to="/contact" className="a-link">
             Contact
           </NavLink>
-        </li>
-      </ul>
+        </motion.li>
+      </motion.ul>
     </div>
   );
 }
