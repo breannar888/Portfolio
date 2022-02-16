@@ -14,7 +14,7 @@
 .icon-wrapper {
   margin-top: 10%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   grid-auto-rows: minmax(100px, auto);
   .icon-card {
@@ -24,6 +24,9 @@
       margin: auto;
       max-width: 55px;
       max-height: 70px;
+    }
+    span {
+        color: #97594C;
     }
   }
 }

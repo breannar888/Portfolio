@@ -3,7 +3,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Salsa', cursive;
+  font-family: "Salsa", cursive;
   min-height: 100vh;
   max-width: 100vw;
   -webkit-box-orient: vertical;
@@ -13,6 +13,5 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0;
 }
 /*# sourceMappingURL=app.css.map */

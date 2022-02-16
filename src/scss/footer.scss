@@ -1,9 +1,11 @@
-.footer {
-  transform: scale(2, 2);
-  max-width: 100%;
-  margin: 0;
-}
 .footer-wrapper {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
+  background: rgb(115, 74, 68);
+  background: linear-gradient(
+    0deg,
+    rgba(115, 74, 68, 1) 0%,
+    rgba(115, 74, 68, 1) 29%,
+    rgba(0, 212, 255, 0) 38%
+  );
 }

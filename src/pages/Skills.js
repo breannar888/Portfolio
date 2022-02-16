@@ -9,7 +9,8 @@ import {
   faReact,
   faCss3Alt,
   faWix,
-  faFigma
+  faFigma,
+  faJs,
 } from "@fortawesome/free-brands-svg-icons";
 import WebflowSVG from "../iconComponents/webflowsvg";
 import WavyUnderline from "../iconComponents/wavyUnderline";
@@ -20,12 +21,12 @@ function SkillsPage() {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        duration: 0.6,
+        duration: 0.5,
       },
     },
     hidden: {
       opacity: 0,
-      transition: { duration: 0.6 },
+      transition: { duration: 0.5 },
     },
   };
 
@@ -33,7 +34,7 @@ function SkillsPage() {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.6 },
+      transition: { duration: 0.5 },
     },
     hidden: {
       y: 50,
@@ -42,11 +43,7 @@ function SkillsPage() {
   };
 
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={container}
-    >
+    <motion.div initial="hidden" animate="visible" variants={container}>
       <motion.div variants={loadUp} className="skills-container">
         <motion.div variants={loadUp} className="skills-title">
           Skills and Tools
@@ -56,40 +53,44 @@ function SkillsPage() {
         </motion.div>
         <motion.div variants={container} className="icon-wrapper">
           <motion.div variants={loadUp} className="icon-card">
-            <FontAwesomeIcon icon={faGithub} size="4x" />
-            Github
-          </motion.div>
-          <motion.div variants={loadUp} className="icon-card">
-            <FontAwesomeIcon icon={faHtml5} size="4x" />
-            HTML5
-          </motion.div>
-          <motion.div variants={loadUp} className="icon-card">
-            <FontAwesomeIcon icon={faSass} size="4x" />
-            SASS
-          </motion.div>
-          <motion.div variants={loadUp} className="icon-card">
-            <FontAwesomeIcon icon={faAws} size="4x" />
-            AWS
+            <FontAwesomeIcon icon={faJs} size="4x" />
+            <span>JavaScript</span>
           </motion.div>
           <motion.div variants={loadUp} className="icon-card">
             <FontAwesomeIcon icon={faReact} size="4x" />
-            React
+            <span>React</span>
+          </motion.div>
+          <motion.div variants={loadUp} className="icon-card">
+            <FontAwesomeIcon icon={faHtml5} size="4x" />
+            <span>HTML5</span>
           </motion.div>
           <motion.div variants={loadUp} className="icon-card">
             <FontAwesomeIcon icon={faCss3Alt} size="4x" />
-            CSS3
+            <span>CSS3</span>
+          </motion.div>
+          <motion.div variants={loadUp} className="icon-card">
+            <FontAwesomeIcon icon={faSass} size="4x" />
+            <span>SASS</span>
+          </motion.div>
+          <motion.div variants={loadUp} className="icon-card">
+            <FontAwesomeIcon icon={faGithub} size="4x" />
+            <span>Github</span>
+          </motion.div>
+          <motion.div variants={loadUp} className="icon-card">
+            <FontAwesomeIcon icon={faAws} size="4x" />
+            <span>AWS</span>
           </motion.div>
           <motion.div variants={loadUp} className="icon-card">
             <FontAwesomeIcon icon={faWix} size="4x" />
-            Wix
+            <span>Wix</span>
           </motion.div>
           <motion.div variants={loadUp} className="icon-card">
-            <WebflowSVG/>
-            Webflow
+            <WebflowSVG />
+            <span>Webflow</span>
           </motion.div>
           <motion.div variants={loadUp} className="icon-card">
             <FontAwesomeIcon icon={faFigma} size="4x" />
-            Figma
+            <span>Figma</span>
           </motion.div>
         </motion.div>
       </motion.div>

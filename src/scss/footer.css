@@ -1,12 +1,8 @@
-.footer {
-  -webkit-transform: scale(2, 2);
-          transform: scale(2, 2);
-  max-width: 100%;
-  margin: 0;
-}
-
 .footer-wrapper {
   width: 100%;
   margin: 0;
+  background: #734a44;
+  background: -webkit-gradient(linear, left bottom, left top, from(#734a44), color-stop(29%, #734a44), color-stop(38%, rgba(0, 212, 255, 0)));
+  background: linear-gradient(0deg, #734a44 0%, #734a44 29%, rgba(0, 212, 255, 0) 38%);
 }
 /*# sourceMappingURL=footer.css.map */
