@@ -37,6 +37,15 @@
   max-height: 70px;
 }
 
+.icon-wrapper .icon-card img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 65px;
+  height: 70px;
+}
+
 .icon-wrapper .icon-card span {
   color: #97594C;
 }

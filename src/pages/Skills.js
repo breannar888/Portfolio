@@ -9,10 +9,12 @@ import {
   faReact,
   faCss3Alt,
   faWix,
-  faFigma,
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
+import { faGears } from "@fortawesome/free-solid-svg-icons";
 import WebflowSVG from "../iconComponents/webflowsvg";
+import VSCode from "../images/vscode.png";
+import Redux from "../images/redux.png";
 import WavyUnderline from "../iconComponents/wavyUnderline";
 
 function SkillsPage() {
@@ -89,8 +91,16 @@ function SkillsPage() {
             <span>Webflow</span>
           </motion.div>
           <motion.div variants={loadUp} className="icon-card">
-            <FontAwesomeIcon icon={faFigma} size="4x" />
-            <span>Figma</span>
+            <img src={VSCode} alt={"VSCode"}/>
+            <span>VSCode</span>
+          </motion.div>
+          <motion.div variants={loadUp} className="icon-card">
+            <img src={Redux} alt={"Redux"}/>
+            <span>Redux</span>
+          </motion.div>
+          <motion.div variants={loadUp} className="icon-card">
+            <FontAwesomeIcon icon={faGears} size="4x" />
+            <span>RESTful APIs</span>
           </motion.div>
         </motion.div>
       </motion.div>
