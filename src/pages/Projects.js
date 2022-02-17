@@ -6,11 +6,9 @@ import {
   faSass,
   faAws,
   faReact,
-  faCss3Alt,
-  faWix,
-  faFigma,
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
+import Redux from "../images/redux.png";
 import Tooltip from "@mui/material/Tooltip";
 import crabpic from "../images/CrabNCreole.png";
 import covidtracker from "../images/COVID19Tracker.png";
@@ -95,14 +93,14 @@ function ProjectsPage() {
                   <FontAwesomeIcon icon={faHtml5} />
                 </span>
               </Tooltip>
-              <Tooltip title="JavaScript" placement="top">
-                <span>
-                  <FontAwesomeIcon icon={faJs} />
-                </span>
-              </Tooltip>
               <Tooltip title="AWS" placement="top">
                 <span>
                   <FontAwesomeIcon icon={faAws} />
+                </span>
+              </Tooltip>
+              <Tooltip title="Redux" placement="top">
+                <span>
+                  <img src={Redux} alt="Redux"/>
                 </span>
               </Tooltip>
             </motion.div>

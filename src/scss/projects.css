@@ -93,6 +93,11 @@
   text-align: center;
   border-radius: 15%;
   background-color: #f5b77a;
+  max-height: 20px;
+}
+
+.project-wrap .project-container .proj-content .icon-wrap span img {
+  max-height: 20px;
 }
 
 .project-wrap .project-container:nth-child(even) {

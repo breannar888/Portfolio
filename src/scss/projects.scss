@@ -64,6 +64,10 @@
           text-align: center;
           border-radius: 15%;
           background-color: #f5b77a;
+          max-height: 20px;
+          img {
+            max-height: 20px;
+          }
         }
       }
     }
