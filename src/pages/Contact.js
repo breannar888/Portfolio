@@ -16,7 +16,7 @@ function ContactPage() {
   return (
     <div>
       <h2>Contact Me!</h2>
-      
+      {success && <p style={{ color: "green" }}>Thanks for your message! </p>}
       <Box
         component="form"
         noValidate
