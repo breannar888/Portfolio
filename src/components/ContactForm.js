@@ -27,11 +27,11 @@ function ContactForm() {
   };
 
   const validationSchema = Yup.object().shape({
-    name: Yup.string().required("Name is required"),
+    name: Yup.string().required("Name is required."),
     email: Yup.string()
-      .email("Enter a valid email")
-      .required("Email is required"),
-    message: Yup.string().required("Please leave a message"),
+      .email("Enter a valid email.")
+      .required("Email is required."),
+    message: Yup.string().required("Please leave a message."),
   });
   //mui styles for form TextField and Button
   const FormTextField = styled(TextField)({
@@ -92,7 +92,7 @@ function ContactForm() {
           handleBlur,
         }) => {
           return (
-            <Box component="form" noValidate autoComplete="off">
+            <Box noValidate autoComplete="off">
               <form
                 onSubmit={handleSubmit}
                 className="form-wrap"
@@ -109,6 +109,7 @@ function ContactForm() {
                   id="standard-basic"
                   label="name"
                   name="name"
+                  required
                 />
                 <div className="contact-error">
                   {touched.name && errors.name}
@@ -120,8 +121,11 @@ function ContactForm() {
                   id="standard-basic"
                   label="email"
                   name="email"
+                  required
                 />
-                <div>{touched.email && errors.email}</div>
+                <div className="contact-error">
+                  {touched.email && errors.email}
+                </div>
                 <FormTextField
                   value={values.message}
                   onChange={handleChange("message")}
@@ -131,8 +135,11 @@ function ContactForm() {
                   id="standard-multiline-static"
                   label="message"
                   name="message"
+                  required
                 />
-                <div>{touched.message && errors.message}</div>
+                <div className="contact-error">
+                  {touched.message && errors.message}
+                </div>
                 {success && (
                   <p style={{ color: "green" }}>Thank you for reaching out! </p>
                 )}

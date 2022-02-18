@@ -9,6 +9,12 @@
   margin: auto;
 }
 
+.contact-error {
+  color: red;
+  font-size: 13px;
+  padding-left: 10px;
+}
+
 .form-wrap {
   width: -webkit-fit-content;
   width: -moz-fit-content;
