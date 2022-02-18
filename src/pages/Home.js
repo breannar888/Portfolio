@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { NavLink } from "react-router-dom";
 
+
 function HomePage() {
   const title = "Hello! I'm \nBreanna Ransom";
 
@@ -63,8 +64,7 @@ function HomePage() {
       </motion.div>
       <motion.p variants={loadUp} className="about-me-text">
         I'm a <span>Frontend Web Developer</span> that designs and develops
-        websites and web-based software. I specialize in React, CSS/SASS, and
-        JavaScript.
+        websites and web-based software.
       </motion.p>
       <motion.div variants={loadUp} className="about-btn">
         <NavLink to="/projects">

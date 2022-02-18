@@ -1,0 +1,43 @@
+.contact-title {
+  margin: auto;
+  font-size: 40px;
+  text-align: center;
+}
+
+.contact-underline {
+  max-width: 250px;
+  margin: auto;
+}
+.form-wrap {
+  width: fit-content;
+  margin: auto;
+  padding: 2%;
+  width: 30%;
+  .form-btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    .form-socials {
+      width: 50%;
+      a {
+        color: black;
+        margin: 0% 4% 0% 0%;
+      }
+      .fa-github {
+        &:hover {
+          color: rgb(88, 88, 88);
+        }
+      }
+      .fa-linkedin {
+        &:hover {
+          color: rgb(19, 111, 187);
+        }
+      }
+    }
+  }
+  div {
+    margin: 1%;
+    width: 98%;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,53 @@
+.contact-title {
+  margin: auto;
+  font-size: 40px;
+  text-align: center;
+}
+
+.contact-underline {
+  max-width: 250px;
+  margin: auto;
+}
+
+.form-wrap {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 2%;
+  width: 30%;
+}
+
+.form-wrap .form-btn-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5%;
+}
+
+.form-wrap .form-btn-wrap .form-socials {
+  width: 50%;
+}
+
+.form-wrap .form-btn-wrap .form-socials a {
+  color: black;
+  margin: 0% 4% 0% 0%;
+}
+
+.form-wrap .form-btn-wrap .form-socials .fa-github:hover {
+  color: #585858;
+}
+
+.form-wrap .form-btn-wrap .form-socials .fa-linkedin:hover {
+  color: #136fbb;
+}
+
+.form-wrap div {
+  margin: 1%;
+  width: 98%;
+  border-radius: 0;
+}
+/*# sourceMappingURL=contact.css.map */
