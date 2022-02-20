@@ -1,6 +1,6 @@
 import "../scss/home.css";
 import { motion } from "framer-motion";
-import WavyUnderline from "../iconComponents/wavyUnderline";
+
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import { NavLink } from "react-router-dom";
@@ -58,9 +58,7 @@ function HomePage() {
         <motion.div variants={loadUp} className="about-me-title">
           {title}
         </motion.div>
-        <motion.div variants={loadUp} className="about-underline">
-          <WavyUnderline />
-        </motion.div>
+       
       </motion.div>
       <motion.p variants={loadUp} className="about-me-text">
         I'm a <span>Frontend Web Developer</span> that designs and develops

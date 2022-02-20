@@ -15,7 +15,7 @@ import { faGears } from "@fortawesome/free-solid-svg-icons";
 import WebflowSVG from "../iconComponents/webflowsvg";
 import VSCode from "../images/vscode.png";
 import Redux from "../images/redux.png";
-import WavyUnderline from "../iconComponents/wavyUnderline";
+
 
 function SkillsPage() {
   const container = {
@@ -50,9 +50,7 @@ function SkillsPage() {
         <motion.div variants={loadUp} className="skills-title">
           Skills and Tools
         </motion.div>
-        <motion.div variants={loadUp} className="skills-underline">
-          <WavyUnderline />
-        </motion.div>
+        
         <motion.div variants={container} className="icon-wrapper">
           <motion.div variants={loadUp} className="icon-card">
             <FontAwesomeIcon icon={faJs} size="4x" />

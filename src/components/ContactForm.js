@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import { styled } from "@mui/material/styles";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import WavyUnderline from "../iconComponents/wavyUnderline";
+
 import Tooltip from "@mui/material/Tooltip";
 import { Formik } from "formik";
 import * as Yup from "yup";
@@ -69,9 +69,7 @@ function ContactForm() {
   return (
     <div>
       <div className="contact-title">Contact Me</div>
-      <div className="contact-underline">
-        <WavyUnderline />
-      </div>
+
       <Formik
         initialValues={{
           name: "",

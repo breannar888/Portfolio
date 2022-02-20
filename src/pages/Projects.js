@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import crabpic from "../images/CrabNCreole.png";
 import covidtracker from "../images/COVID19Tracker.png";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import WavyUnderline from "../iconComponents/wavyUnderline";
+
 import { motion } from "framer-motion";
 
 function ProjectsPage() {
@@ -52,9 +52,7 @@ function ProjectsPage() {
       <motion.div className="title" variants={loadUp}>
         Projects
       </motion.div>
-      <motion.div className="project-underline" variants={loadUp}>
-        <WavyUnderline />
-      </motion.div>
+    
       <motion.div className="project-box">
         <motion.div className="project-container" variants={loadUp}>
           <motion.div className="img-box">
