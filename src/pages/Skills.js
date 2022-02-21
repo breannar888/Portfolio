@@ -8,14 +8,13 @@ import {
   faAws,
   faReact,
   faCss3Alt,
-  faWix,
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
 import { faGears } from "@fortawesome/free-solid-svg-icons";
-import WebflowSVG from "../iconComponents/webflowsvg";
 import VSCode from "../images/vscode.png";
 import Redux from "../images/redux.png";
-
+import Button from "@mui/material/Button";
+import { styled } from "@mui/material/styles";
 
 function SkillsPage() {
   const container = {
@@ -44,13 +43,32 @@ function SkillsPage() {
     },
   };
 
+  const ResumeBtn = styled(Button)({
+    backgroundColor: "#D47B59",
+    fontFamily: ['"Salsa", cursive'],
+    textTransform: "capitalize",
+    textDecoration: "none",
+    color: "black",
+    borderRadius: 0,
+    fontSize: 18,
+    padding: 15,
+    "&:hover": {
+      backgroundColor: "black",
+      color: "white",
+    },
+  });
+
   return (
-    <motion.div initial="hidden" animate="visible" variants={container}>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={container}
+      id="skills"
+    >
       <motion.div variants={loadUp} className="skills-container">
         <motion.div variants={loadUp} className="skills-title">
           Skills and Tools
         </motion.div>
-        
         <motion.div variants={container} className="icon-wrapper">
           <motion.div variants={loadUp} className="icon-card">
             <FontAwesomeIcon icon={faJs} size="4x" />
@@ -81,19 +99,11 @@ function SkillsPage() {
             <span>AWS</span>
           </motion.div>
           <motion.div variants={loadUp} className="icon-card">
-            <FontAwesomeIcon icon={faWix} size="4x" />
-            <span>Wix</span>
-          </motion.div>
-          <motion.div variants={loadUp} className="icon-card">
-            <WebflowSVG />
-            <span>Webflow</span>
-          </motion.div>
-          <motion.div variants={loadUp} className="icon-card">
-            <img src={VSCode} alt={"VSCode"}/>
+            <img src={VSCode} alt={"VSCode"} />
             <span>VSCode</span>
           </motion.div>
           <motion.div variants={loadUp} className="icon-card">
-            <img src={Redux} alt={"Redux"}/>
+            <img src={Redux} alt={"Redux"} />
             <span>Redux</span>
           </motion.div>
           <motion.div variants={loadUp} className="icon-card">
@@ -101,6 +111,9 @@ function SkillsPage() {
             <span>RESTful APIs</span>
           </motion.div>
         </motion.div>
+        <div className="resume-btn">
+          <ResumeBtn variant="contained">View Resume</ResumeBtn>
+        </div>
       </motion.div>
     </motion.div>
   );

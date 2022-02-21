@@ -1,7 +1,14 @@
+.contact-wrapper {
+  background: no-repeat url(/src/images/darkbrownwavy.png);
+  background-size: 100% 100%;
+  padding: 5% 0 5% 0;
+}
+
 .contact-title {
   margin: auto;
   font-size: 40px;
   text-align: center;
+  color: white;
 }
 
 .contact-underline {
@@ -9,7 +16,7 @@
   margin: auto;
 }
 .contact-error {
-  color: red;
+  color: rgb(255, 255, 255);
   font-size: 13px;
   padding-left: 10px;
 }
@@ -30,12 +37,12 @@
       }
       .fa-github {
         &:hover {
-          color: rgb(88, 88, 88);
+          color: rgb(255, 255, 255);
         }
       }
       .fa-linkedin {
         &:hover {
-          color: rgb(19, 111, 187);
+          color: rgb(255, 255, 255);
         }
       }
     }

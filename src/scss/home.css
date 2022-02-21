@@ -1,30 +1,41 @@
-.about-wrapper {
+.about-container {
   padding: 5% 15% 5% 15%;
+  min-height: 60vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.about-me-title {
-  font-size: 70px;
+.about-container .about-wrap {
+  margin: auto;
+  width: 90%;
+}
+
+.about-container .about-me-title {
+  font-size: 80px;
   white-space: pre-wrap;
+  color: #734A44;
 }
 
-.about-me-text {
+.about-container .about-me-text {
   font-size: 16px;
   text-align: right;
 }
 
-.about-me-text span {
+.about-container .about-me-text span {
   color: #f5b77a;
 }
 
-.about-title-container {
+.about-container .about-title-container {
   width: auto;
 }
 
-.about-underline {
+.about-container .about-underline {
   max-width: 36em;
 }
 
-.about-btn {
+.about-container .about-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +44,18 @@
           justify-content: right;
 }
 
-.about-btn a {
+.about-container .about-btn a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-container {
+    padding: 5% 5% 5% 5%;
+  }
+  .about-container .about-me-title {
+    font-size: 45px;
+    white-space: pre-wrap;
+    color: #734A44;
+  }
 }
 /*# sourceMappingURL=home.css.map */

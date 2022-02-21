@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import { styled } from "@mui/material/styles";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-
 import Tooltip from "@mui/material/Tooltip";
 import { Formik } from "formik";
 import * as Yup from "yup";
@@ -56,20 +55,23 @@ function ContactForm() {
   });
 
   const Btn = styled(Button)({
-    backgroundColor: "#C0D7B6",
+    backgroundColor: "#D47B59",
     fontFamily: ['"Salsa", cursive'],
     textTransform: "capitalize",
     textDecoration: "none",
     color: "black",
+    borderRadius: 0,
+    fontSize: 18,
+    padding: 15,
     "&:hover": {
-      backgroundColor: "#98ab90",
+      backgroundColor: "black",
       color: "white",
     },
   });
-  return (
-    <div>
-      <div className="contact-title">Contact Me</div>
 
+  return (
+    <div className="contact-wrapper">
+      <div className="contact-title">Contact Me</div>
       <Formik
         initialValues={{
           name: "",
@@ -98,6 +100,7 @@ function ContactForm() {
                 method="POST"
                 action="/contact/?success=true"
                 data-netlify="true"
+                id="contact"
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <FormTextField

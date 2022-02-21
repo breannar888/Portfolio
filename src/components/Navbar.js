@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "../scss/navbar.css";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -11,24 +11,24 @@ function NavBar() {
     <div className="nav">
       <motion.ul>
         <motion.li>
-          <NavLink to="/" className={`a-link ${isActive ? "active" : ""}`}>
+          <Link smooth to="/#home" className={`a-link ${isActive ? "active" : ""}`}>
             About
-          </NavLink>
+          </Link>
         </motion.li>
         <motion.li>
-          <NavLink to="/skills" className="a-link">
+          <Link smooth to="/#skills" className="a-link">
             Skills
-          </NavLink>
+          </Link>
         </motion.li>
         <motion.li>
-          <NavLink to="/projects" className="a-link">
+          <Link smooth to="#projects" className="a-link">
             Projects
-          </NavLink>
+          </Link>
         </motion.li>
         <motion.li>
-          <NavLink to="/contact" className="a-link">
+          <Link smooth to="/#contact" className="a-link">
             Contact
-          </NavLink>
+          </Link>
         </motion.li>
       </motion.ul>
     </div>

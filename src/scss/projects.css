@@ -1,11 +1,14 @@
 .project-wrap {
   padding: 2%;
+  margin-top: 7%;
+  margin-bottom: 7%;
 }
 
 .project-wrap .title {
   margin: auto;
   font-size: 40px;
   text-align: center;
+  color: #5A3D39;
 }
 
 .project-wrap .project-underline {
@@ -23,7 +26,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1000px;
 }
 
 .project-wrap .project-container .img-box {
@@ -55,12 +57,11 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  position: relative;
 }
 
 .project-wrap .project-container .proj-content .proj-title {
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .project-wrap .project-container .proj-content .proj-title a {
@@ -75,7 +76,7 @@
 .project-wrap .project-container .proj-content .proj-type {
   color: #5a3d39;
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .project-wrap .project-container .proj-content .icon-wrap {
@@ -105,7 +106,6 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  float: right;
   clear: both;
 }
 
@@ -154,7 +154,6 @@
 }
 
 .project-wrap .project-container:nth-child(odd) {
-  float: left;
   clear: both;
 }
 

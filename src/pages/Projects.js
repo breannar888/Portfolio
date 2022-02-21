@@ -13,7 +13,6 @@ import Tooltip from "@mui/material/Tooltip";
 import crabpic from "../images/CrabNCreole.png";
 import covidtracker from "../images/COVID19Tracker.png";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-
 import { motion } from "framer-motion";
 
 function ProjectsPage() {
@@ -48,11 +47,11 @@ function ProjectsPage() {
       initial="hidden"
       animate="visible"
       variants={container}
+      id="projects"
     >
-      <motion.div className="title" variants={loadUp}>
+     <motion.div className="title" variants={loadUp}>
         Projects
       </motion.div>
-    
       <motion.div className="project-box">
         <motion.div className="project-container" variants={loadUp}>
           <motion.div className="img-box">

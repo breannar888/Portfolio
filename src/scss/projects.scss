@@ -1,9 +1,12 @@
 .project-wrap {
   padding: 2%;
+  margin-top: 7%;
+  margin-bottom: 7%;
   .title {
     margin: auto;
     font-size: 40px;
     text-align: center;
+    color: #5A3D39;
   }
   .project-underline {
     max-width: 250px;
@@ -16,7 +19,6 @@
   .project-container {
     margin: 5% 0 2% 0;
     display: flex;
-    max-width: 1000px;
     .img-box {
       max-width: 45%;
       height: auto;
@@ -38,10 +40,9 @@
       margin: auto;
       width: 100%;
       height: fit-content;
-      position: relative;
       .proj-title {
         text-align: center;
-        font-size: 20px;
+        font-size: 22px;
         a {
           text-decoration: none;
           color: black;
@@ -53,7 +54,7 @@
       .proj-type {
         color: #5a3d39;
         text-align: center;
-        font-size: 15px;
+        font-size: 17px;
       }
       .icon-wrap {
         display: flex;
@@ -74,7 +75,6 @@
   }
   .project-container:nth-child(even) {
     flex-direction: row-reverse;
-    float: right;
     clear: both;
     .img-box {
       margin-left: -50px;
@@ -110,7 +110,6 @@
     }
   }
   .project-container:nth-child(odd) {
-    float: left;
     clear: both;
     .img-box {
       margin-right: -50px;

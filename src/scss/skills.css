@@ -1,31 +1,39 @@
+#skills {
+  background: no-repeat url(/src/images/peachwavy.png);
+  background-size: 100% 100%;
+  padding: 1%;
+}
+
 .skills-container {
-  width: 70%;
-  margin: 0% auto 0% auto;
+  margin: 3%;
 }
 
 .skills-container .skills-title {
-  margin: auto;
   font-size: 40px;
   text-align: center;
+  padding-bottom: 2%;
+  color: #734A44;
 }
 
-.skills-container .skills-underline {
-  max-width: 300px;
+.resume-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: auto;
 }
 
 .icon-wrapper {
-  margin-top: 10%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
+  margin-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .icon-wrapper .icon-card {
   text-align: center;
+  margin-bottom: 2%;
 }
 
 .icon-wrapper .icon-card svg {
@@ -43,7 +51,7 @@
   display: flex;
   margin: auto;
   width: 65px;
-  height: 70px;
+  height: 65px;
 }
 
 .icon-wrapper .icon-card span {
