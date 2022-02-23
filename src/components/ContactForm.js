@@ -54,20 +54,24 @@ function ContactForm() {
     },
   });
 
-  const Btn = styled(Button)({
+  const Btn = styled(Button)(({ theme }) => ({
     backgroundColor: "#D47B59",
     fontFamily: ['"Salsa", cursive'],
     textTransform: "capitalize",
     textDecoration: "none",
     color: "black",
     borderRadius: 0,
-    fontSize: 18,
-    padding: 15,
+    fontSize: 16,
+    padding: 10,
     "&:hover": {
       backgroundColor: "black",
       color: "white",
     },
-  });
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 12,
+      padding: 8,
+    },
+  }));
 
   return (
     <div className="contact-wrapper">

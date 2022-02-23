@@ -11,10 +11,6 @@
   color: white;
 }
 
-.contact-underline {
-  max-width: 250px;
-  margin: auto;
-}
 .contact-error {
   color: rgb(255, 255, 255);
   font-size: 13px;
@@ -23,12 +19,12 @@
 .form-wrap {
   width: fit-content;
   margin: auto;
-  padding: 2%;
-  width: 30%;
+  width: 40%;
   .form-btn-wrap {
     display: flex;
     justify-content: space-between;
-    margin-top: 5%;
+    width: auto;
+    margin: 0% 2% 0% 2%;
     .form-socials {
       width: 50%;
       a {
@@ -51,5 +47,14 @@
     margin: 1%;
     width: 98%;
     border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .form-wrap {
+    width: 70%;
+  }
+  .contact-title {
+    font-size: 35px;
   }
 }

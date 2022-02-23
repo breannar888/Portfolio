@@ -1,3 +1,8 @@
 .header {
     min-height: 60px;
+    border: 1px solid red;
+}
+.header-wrap {
+    background: no-repeat url(../images/wavyheader.png);
+  background-size: 100% 100%;
 }

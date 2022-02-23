@@ -1,7 +1,7 @@
-.nav {
-  position: absolute;
+.nav-menu {
+  position: fixed;
   width: 100%;
-  min-height: 5%;
+  transition: 0ms;
   ul {
     display: flex;
     justify-content: right;
@@ -44,6 +44,145 @@
       transform: scaleX(1);
       height: 2px;
       background-color: #5a3d39;
+    }
+  }
+}
+.mobile-nav-menu {
+  position: fixed;
+  width: 100%;
+  transition: 0ms;
+  ul {
+    display: flex;
+    justify-content: right;
+    height: 3.2vw;
+    li {
+      font-size: 17px;
+      list-style: none;
+      margin: 0 5% 0 0;
+      margin-top: auto;
+    }
+  }
+  .a-link {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: black;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #5a3d39;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+  }
+  .active {
+    &::after {
+      content: "";
+      width: 100%;
+      transform: scaleX(1);
+      height: 2px;
+      background-color: #5a3d39;
+    }
+  }
+}
+.mobile-btn {
+  z-index: 1111;
+  display: none;
+  float: right;
+  font-size: 22px;
+  background-color: transparent;
+  border: transparent;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.nav-wrap {
+  background: no-repeat url(../images/wavyheader.png);
+  background-size: 100% 100%;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  min-height: 65px;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav-menu {
+    transition: 850ms;
+    right: -100%;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    ul {
+      display: none;
+    }
+  }
+  .mobile-btn {
+    display: block;
+  }
+  .mobile-nav-menu {
+    transition: 450ms;
+    right: 0;
+    position: fixed;
+    width: 250px;
+    background-color: #d47b59;
+    height: 100vh;
+    z-index: -1;
+    ul {
+      margin-top: 100px;
+      position: relative;
+      display: block;
+      height: fit-content;
+      li {
+        font-size: 17px;
+        list-style: none;
+        text-align: center;
+        margin: 0 15px 35px 0;
+      }
+    }
+    .a-link {
+      display: inline-block;
+      text-decoration: none;
+      position: relative;
+      color: black;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #5a3d39;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      &:hover {
+        &::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      }
+    }
+    .active {
+      &::after {
+        content: "";
+        width: 100%;
+        transform: scaleX(1);
+        height: 2px;
+        background-color: #5a3d39;
+      }
     }
   }
 }

@@ -11,11 +11,6 @@
   color: white;
 }
 
-.contact-underline {
-  max-width: 250px;
-  margin: auto;
-}
-
 .contact-error {
   color: white;
   font-size: 13px;
@@ -27,8 +22,7 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  padding: 2%;
-  width: 30%;
+  width: 40%;
 }
 
 .form-wrap .form-btn-wrap {
@@ -38,7 +32,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 5%;
+  width: auto;
+  margin: 0% 2% 0% 2%;
 }
 
 .form-wrap .form-btn-wrap .form-socials {
@@ -62,5 +57,14 @@
   margin: 1%;
   width: 98%;
   border-radius: 0;
+}
+
+@media only screen and (max-width: 765px) {
+  .form-wrap {
+    width: 70%;
+  }
+  .contact-title {
+    font-size: 35px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

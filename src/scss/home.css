@@ -1,6 +1,6 @@
 .about-container {
-  padding: 5% 15% 5% 15%;
-  min-height: 60vh;
+  padding: 10% 15% 0% 15%;
+  min-height: 55vh;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,10 +31,6 @@
   width: auto;
 }
 
-.about-container .about-underline {
-  max-width: 36em;
-}
-
 .about-container .about-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,12 +46,39 @@
 
 @media only screen and (max-width: 1000px) {
   .about-container {
-    padding: 5% 5% 5% 5%;
+    padding: 10% 10% 0% 15%;
+  }
+  .about-container .about-me-title {
+    font-size: 65px;
+    white-space: pre-wrap;
+    color: #734A44;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .about-container {
+    padding: 15% 5% 0% 5%;
+    min-height: 35vh;
   }
   .about-container .about-me-title {
     font-size: 45px;
     white-space: pre-wrap;
     color: #734A44;
+  }
+  .about-container .about-me-text {
+    font-size: 13px;
+    text-align: right;
+  }
+  .about-container .about-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-container .about-btn a {
+    text-decoration: none;
   }
 }
 /*# sourceMappingURL=home.css.map */

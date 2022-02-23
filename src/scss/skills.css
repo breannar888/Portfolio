@@ -1,7 +1,15 @@
-#skills {
+.skills-inner-wrap {
   background: no-repeat url(/src/images/peachwavy.png);
   background-size: 100% 100%;
   padding: 1%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.skills-wrap {
+  height: 70vh;
 }
 
 .skills-container {
@@ -12,7 +20,7 @@
   font-size: 40px;
   text-align: center;
   padding-bottom: 2%;
-  color: #734A44;
+  color: #734a44;
 }
 
 .resume-btn {
@@ -55,6 +63,55 @@
 }
 
 .icon-wrapper .icon-card span {
-  color: #97594C;
+  color: #97594c;
+}
+
+@media only screen and (max-width: 765px) {
+  .skills-wrap {
+    height: 50vh;
+  }
+  .skills-container {
+    margin: 2% 2% 5% 2%;
+  }
+  .skills-container .skills-title {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 5%;
+    color: #734a44;
+  }
+  .skills-container .icon-wrapper {
+    margin-top: 2%;
+    display: unset;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+  .skills-container .icon-wrapper .icon-card {
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .skills-container .icon-wrapper .icon-card svg {
+    margin: auto;
+    max-width: 55px;
+    max-height: 70px;
+  }
+  .skills-container .icon-wrapper .icon-card img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    width: 65px;
+    height: 65px;
+  }
+  .skills-container .icon-wrapper .icon-card span {
+    color: #97594c;
+  }
+  .skills-container .resume-btn {
+    margin: 4% auto 8% auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 /*# sourceMappingURL=skills.css.map */

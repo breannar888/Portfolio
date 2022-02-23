@@ -7,19 +7,22 @@ import { HashLink as Link } from "react-router-hash-link";
 function HomePage() {
   const title = "Hello! I'm \nBreanna Ransom";
 
-  const ProjectsBtn = styled(Button)({
+  const ProjectsBtn = styled(Button)(({ theme }) => ({
     backgroundColor: "#5A3D39",
     fontFamily: ['"Salsa", cursive'],
     textTransform: "capitalize",
     textDecoration: "none",
     color: "white",
-    fontSize: 18,
-    padding: 15,
+    fontSize: 16,
+    padding: 10,
     borderRadius: 0,
     "&:hover": {
       backgroundColor: "black",
     },
-  });
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 12,
+    },
+  }));
 
   const container = {
     visible: {
@@ -63,8 +66,9 @@ function HomePage() {
         </motion.div>
         <motion.p variants={loadUp} className="about-me-text">
           I'm a <span>Frontend Web Developer</span> that designs and develops
-          websites and web-based software. blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah 
-          websites and web-based software. blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah  blah 
+          websites and web-based software. blah blah blah blah blah blah blah
+          blah blah blah blah blah blah blah websites and web-based software.
+          blah blah blah blah blah blah blah blah blah blah blah blah blah blah
         </motion.p>
         <motion.div variants={loadUp} className="about-btn">
           <Link smooth to="/#projects">

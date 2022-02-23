@@ -1,7 +1,13 @@
-#skills {
+.skills-inner-wrap {
   background: no-repeat url(/src/images/peachwavy.png);
   background-size: 100% 100%;
   padding: 1%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.skills-wrap {
+  height: 70vh;
 }
 .skills-container {
   margin: 3%;
@@ -9,7 +15,7 @@
     font-size: 40px;
     text-align: center;
     padding-bottom: 2%;
-    color: #734A44;
+    color: #734a44;
   }
 }
 .resume-btn {
@@ -36,8 +42,50 @@
       height: 65px;
     }
     span {
-        color: #97594C;
-        
+      color: #97594c;
+    }
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .skills-wrap {
+    height: 50vh;
+  }
+  .skills-container {
+    margin: 2% 2% 5% 2%;
+    .skills-title {
+      font-size: 35px;
+      text-align: center;
+      padding-bottom: 5%;
+      color: #734a44;
+    }
+    .icon-wrapper {
+      margin-top: 2%;
+      display: unset;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      .icon-card {
+        text-align: center;
+        margin-bottom: 2%;
+        svg {
+          margin: auto;
+          max-width: 55px;
+          max-height: 70px;
+        }
+        img {
+          display: flex;
+          margin: auto;
+          width: 65px;
+          height: 65px;
+        }
+        span {
+          color: #97594c;
+        }
+      }
+    }
+    .resume-btn {
+      margin: 4% auto 8% auto;
+      width: fit-content;
     }
   }
 }
