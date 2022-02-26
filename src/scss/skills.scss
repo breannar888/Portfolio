@@ -43,13 +43,14 @@
     }
     span {
       color: #97594c;
+      font-style: italic;
     }
   }
 }
 
 @media only screen and (max-width: 765px) {
   .skills-wrap {
-    height: 50vh;
+    height: 60vh;
   }
   .skills-container {
     margin: 2% 2% 5% 2%;

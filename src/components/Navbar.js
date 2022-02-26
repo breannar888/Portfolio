@@ -1,16 +1,10 @@
 import { HashLink as Link } from "react-router-hash-link";
 import "../scss/navbar.css";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
 
-function NavBar() {
-  const [isOpen, setisOpen] = useState(true);
-
-  const showMobileMenu = () => {
-    setisOpen(!isOpen);
-  };
+function NavBar({showMobileMenu, isOpen, handleClose}) {
   return (
     <>
       <div className="nav-wrap">
@@ -19,22 +13,22 @@ function NavBar() {
         </button>
         <div className={isOpen ? "nav-menu" : "mobile-nav-menu"}>
           <motion.ul>
-            <motion.li>
+            <motion.li onClick={handleClose}>
               <Link smooth to="/#home" className="a-link">
                 About
               </Link>
             </motion.li>
-            <motion.li>
+            <motion.li onClick={handleClose}>
               <Link smooth to="/#skills" className="a-link">
                 Skills
               </Link>
             </motion.li>
-            <motion.li>
+            <motion.li onClick={handleClose}>
               <Link smooth to="#projects" className="a-link">
                 Projects
               </Link>
             </motion.li>
-            <motion.li>
+            <motion.li onClick={handleClose}>
               <Link smooth to="/#contact" className="a-link">
                 Contact
               </Link>

@@ -2,11 +2,14 @@
   position: fixed;
   width: 100%;
   transition: 0ms;
+  background: no-repeat url(../images/wavyheader.png);
+  background-size: 100% 100%;
   ul {
     display: flex;
     justify-content: right;
     height: 3.2vw;
     li {
+      display: inline-block;
       font-size: 17px;
       list-style: none;
       margin: 0 5% 0 0;
@@ -51,11 +54,14 @@
   position: fixed;
   width: 100%;
   transition: 0ms;
+  background: no-repeat url(../images/wavyheader.png);
+  background-size: 100% 100%;
   ul {
     display: flex;
     justify-content: right;
     height: 3.2vw;
     li {
+      display: inline-block;
       font-size: 17px;
       list-style: none;
       margin: 0 5% 0 0;
@@ -119,36 +125,29 @@
 
 @media only screen and (max-width: 900px) {
   .nav-menu {
-    transition: 850ms;
-    right: -100%;
-    position: fixed;
-    width: 250px;
-    height: 100vh;
-    ul {
-      display: none;
-    }
-  }
-  .mobile-btn {
-    display: block;
-  }
-  .mobile-nav-menu {
     transition: 450ms;
     right: 0;
-    position: fixed;
     width: 250px;
     background-color: #d47b59;
     height: 100vh;
     z-index: -1;
     ul {
       margin-top: 100px;
-      position: relative;
-      display: block;
-      height: fit-content;
+      height: unset;
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
       li {
         font-size: 17px;
-        list-style: none;
         text-align: center;
-        margin: 0 15px 35px 0;
+        display: inline-block;
+        list-style: none;
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+        &:hover {
+          background-color: #f5b77a;
+        }
       }
     }
     .a-link {
@@ -156,22 +155,15 @@
       text-decoration: none;
       position: relative;
       color: black;
+      padding: 5% 0 5% 0;
+      width: 100%;
       &::after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #5a3d39;
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
+        position: unset;
+        transition: none;
       }
       &:hover {
         &::after {
-          transform: scaleX(1);
-          transform-origin: bottom left;
+          transform: none;
         }
       }
     }
@@ -179,10 +171,20 @@
       &::after {
         content: "";
         width: 100%;
-        transform: scaleX(1);
-        height: 2px;
-        background-color: #5a3d39;
+        transform: none;
       }
+    }
+  }
+  .mobile-btn {
+    display: block;
+  }
+  .mobile-nav-menu {
+    transition: 850ms;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    ul {
+      display: none;
     }
   }
 }

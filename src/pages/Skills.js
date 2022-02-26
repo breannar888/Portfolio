@@ -50,7 +50,7 @@ function SkillsPage() {
 
   const ResumeBtn = styled(Button)(({ theme }) => ({
     backgroundColor: "#D47B59",
-    fontFamily: ['"Salsa", cursive'],
+    fontFamily: ['"Nunito", sans-serif'],
     textTransform: "capitalize",
     textDecoration: "none",
     color: "black",

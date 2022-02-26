@@ -56,9 +56,9 @@ function ContactForm() {
 
   const Btn = styled(Button)(({ theme }) => ({
     backgroundColor: "#D47B59",
-    fontFamily: ['"Salsa", cursive'],
+    fontFamily: ['"Nunito", sans-serif'],
     textTransform: "capitalize",
-    textDecoration: "none",
+    textDecoration: "none", 
     color: "black",
     borderRadius: 0,
     fontSize: 16,

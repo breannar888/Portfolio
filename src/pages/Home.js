@@ -5,11 +5,11 @@ import { styled } from "@mui/material/styles";
 import { HashLink as Link } from "react-router-hash-link";
 
 function HomePage() {
-  const title = "Hello! I'm \nBreanna Ransom";
+  const title = "Hello, I'm \nBreanna Ransom";
 
   const ProjectsBtn = styled(Button)(({ theme }) => ({
     backgroundColor: "#5A3D39",
-    fontFamily: ['"Salsa", cursive'],
+    fontFamily: ['"Nunito", sans-serif'],
     textTransform: "capitalize",
     textDecoration: "none",
     color: "white",
@@ -65,7 +65,7 @@ function HomePage() {
           </motion.div>
         </motion.div>
         <motion.p variants={loadUp} className="about-me-text">
-          I'm a <span>Frontend Web Developer</span> that designs and develops
+          A <span>Frontend Developer</span> that designs and develops
           websites and web-based software. blah blah blah blah blah blah blah
           blah blah blah blah blah blah blah websites and web-based software.
           blah blah blah blah blah blah blah blah blah blah blah blah blah blah

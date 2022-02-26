@@ -8,6 +8,7 @@ import {
   faReact,
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
+import { faGears } from "@fortawesome/free-solid-svg-icons";
 import Redux from "../images/redux.png";
 import Tooltip from "@mui/material/Tooltip";
 import crabpic from "../images/CrabNCreole.png";
@@ -49,7 +50,7 @@ function ProjectsPage() {
       variants={container}
       id="projects"
     >
-     <motion.div className="title" variants={loadUp}>
+      <motion.div className="title" variants={loadUp}>
         Projects
       </motion.div>
       <motion.div className="project-box">
@@ -73,7 +74,7 @@ function ProjectsPage() {
                 Crab N' Creole
               </a>
             </motion.div>
-            <motion.div className="proj-type">Project Type</motion.div>
+            <motion.div className="proj-type">Restaurant Site</motion.div>
             <motion.div className="icon-wrap">
               <Tooltip title="React" placement="top">
                 <span>
@@ -97,17 +98,14 @@ function ProjectsPage() {
               </Tooltip>
               <Tooltip title="Redux" placement="top">
                 <span>
-                  <img src={Redux} alt="Redux"/>
+                  <img src={Redux} alt="Redux" />
                 </span>
               </Tooltip>
             </motion.div>
             <motion.div className="proj-description">
-              Vestibulum ultricies id purus ac semper. Donec at nisl ex. Nulla
-              quis sem laoreet nibh volutpat faucibus eu sit amet turpis. Morbi
-              a libero pretium, facilisis elit sit amet, tincidunt ligula. Duis
-              hendrerit aliquet est. Quisque aliquam maximus nibh, ut rhoncus
-              enim vestibulum congue. Vivamus hendrerit ex neque, eu tincidunt
-              sem sodales vel.
+              A mock restaurant site featuring order page and shopping cart that uses Redux,
+              custom hooks, state management and context. Responsive website fit
+              for mobile, tablet, and desktop views. Hosted using AWS.
             </motion.div>
             <motion.div className="proj-links">
               <Tooltip title="Github" placement="bottom">
@@ -142,7 +140,7 @@ function ProjectsPage() {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={covidtracker} alt={"Crab N' Creole"} />
+              <img src={covidtracker} alt={" Live Covid Tracker"} />
             </a>
           </motion.div>
           <motion.div className="proj-content">
@@ -152,10 +150,10 @@ function ProjectsPage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                COVID-19 Tracker
+                Live COVID-19 Tracker
               </a>
             </motion.div>
-            <motion.div className="proj-type">Project Type</motion.div>
+            <motion.div className="proj-type">Web App</motion.div>
             <motion.div className="icon-wrap">
               <Tooltip title="React" placement="top">
                 <span>
@@ -177,14 +175,16 @@ function ProjectsPage() {
                   <FontAwesomeIcon icon={faGithub} />
                 </span>
               </Tooltip>
+              <Tooltip title="Restful API" placement="top">
+                <span>
+                  <FontAwesomeIcon icon={faGears} />
+                </span>
+              </Tooltip>
             </motion.div>
             <motion.div className="proj-description">
-              Vestibulum ultricies id purus ac semper. Donec at nisl ex. Nulla
-              quis sem laoreet nibh volutpat faucibus eu sit amet turpis. Morbi
-              a libero pretium, facilisis elit sit amet, tincidunt ligula. Duis
-              hendrerit aliquet est. Quisque aliquam maximus nibh, ut rhoncus
-              enim vestibulum congue. Vivamus hendrerit ex neque, eu tincidunt
-              sem sodales vel.
+              Live COVID-19 Tracker that displays worldwide COVID-19
+              statistics in a dynamic choropleth map, info boxes with
+              total worldwide statistics, and a countries panel with in-depth COVID-19 data.
             </motion.div>
             <motion.div className="proj-links">
               <Tooltip title="Github" placement="bottom">
