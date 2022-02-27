@@ -66,7 +66,7 @@ function HomePage() {
         </motion.div>
         <motion.p variants={loadUp} className="about-me-text">
           A <span>Frontend Developer</span> that designs and develops
-          websites and web-based software. 
+          websites and web-based software. I enjoy learning, creating, and growing as a developer. 
         </motion.p>
         <motion.div variants={loadUp} className="about-btn">
           <Link smooth to="/#projects">

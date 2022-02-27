@@ -103,7 +103,7 @@ function ProjectsPage() {
               </Tooltip>
             </motion.div>
             <motion.div className="proj-description">
-              A mock restaurant site featuring order page and shopping cart that uses Redux,
+              A static restaurant site featuring a shopping cart that uses Redux,
               custom hooks, state management and context. Responsive website fit
               for mobile, tablet, and desktop views. Hosted using AWS.
             </motion.div>
